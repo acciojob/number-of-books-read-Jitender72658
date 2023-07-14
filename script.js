@@ -13,13 +13,19 @@ const library = [
     author: "Suzanne Collins",
     title: "Mockingjay: The Final Book of The Hunger Games",
     readingStatus: false,
-  },
+  }
 ];
 
 const numberOfBooksRead = () => {
-  // write your code here
+  int booksRead = 0;
+	for(var i = 0; i<library.length;i++){
+		if(readingStatus in library[i]){
+			booksRead++;
+		}
+	}
+	return booksRead;
 };
 
 // Do not change the code below
 
-alert(numberOfBooksRead());
+ alert(numberOfBooksRead());
